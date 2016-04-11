@@ -1,0 +1,27 @@
+name: Insanen
+version: 1.0.0
+description: "Grav Startup Theme by Insanen"
+icon: empire
+author:
+  name: Insanen Solutions
+  email: support@insanen.com
+  url: http://insanen.com
+homepage: https://github.com/misterzik/grav-startup
+demo: http://insanen.com
+keywords: insanen, theme, core, modern, fast, responsive, html5, css3
+bugs: https://github.com/misterzik/grav-startup/issues
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    dropdown.enabled:
+        type: toggle
+        label: Dropdown in navbar
+        highlight: 1
+        default: 1
+        options:
+          1: Enabled
+          0: Disabled
+        validate:
+          type: bool
