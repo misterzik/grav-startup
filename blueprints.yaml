@@ -1,6 +1,6 @@
 name: Insanen
-version: 1.0.0
-description: "Grav Startup Theme by Insanen"
+version: 1.0.1
+description: "GravityCMS Startup Theme by Insanen Team"
 icon: empire
 author:
   name: Insanen Solutions
@@ -25,3 +25,17 @@ form:
           0: Disabled
         validate:
           type: bool
+          
+          fields:
+            header.faq:
+              name: faq
+              type: list
+              label: Frequently Asked Questions
+
+              fields:
+                .question:
+                  type: text
+                  label: Question
+                .answer:
+                  type: text
+                  label: Answer
