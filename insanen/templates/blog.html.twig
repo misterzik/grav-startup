@@ -1,6 +1,7 @@
 {% embed 'partials/base.html.twig' %}
 	{% set collection = page.collection() %}
 	{% block content %}
+
 	<div class="col-md-8">
 
 		{% set blog_image = page.media.images|first.grayscale().contrast(20).brightness(-100).colorize(-35,81,122) %}

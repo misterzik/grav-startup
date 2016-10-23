@@ -5,17 +5,17 @@
     {% set header_image_height = page.header.header_image_height|defined(300) %}
     {% set header_image_file = page.header.header_image_file %}
 
-    <div class="list-blog-header">
+    <div class="list-blog-header-content">
 
         {% if page.header.link %}
-            <h4 class="post-title">
+            <h4 class="post-title-content">
                 {% if page.header.continue_link is not sameas(false) %}
                 <a href="{{ page.url }}"><i class="fa fa-angle-double-right u-url"></i></a>
                 {% endif %}
                 <a href="{{ page.header.link }}" class="u-url">{{ page.title }}</a>
             </h4>
         {% else %}
-            <h4 class="post-title"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h4>
+            <h4 class="post-title-content"><a href="{{ page.url }}" class="u-url">{{ page.title }}</a></h4>
         {% endif %}
 
         <div class="post-date">
@@ -43,7 +43,7 @@
 
     </div>
 
-    <div class="list-blog">
+    <div class="list-blog-content">
 
     {% if page.header.continue_link is sameas(false) %}
         <div class="e-content">
@@ -55,7 +55,7 @@
     {% elseif truncate and page.summary != page.content %}
         <div class="p-summary e-content">
             {{ page.summary }}
-                    <hr class="hrmore" />
+                    <hr />
             <div class="readmore"><a href="{{ page.url }}">Read More</a></div>
         </div>
     {% elseif truncate %}
@@ -67,7 +67,7 @@
                     {{ page.content }}
 
             {% endif %}
-                    <hr class="hrmore" />
+                    <hr />
             <div class="readmore"><a href="{{ page.url }}">Read More</a></div>
         </div>
     {% else %}
@@ -86,11 +86,11 @@
 
         <p class="prev-next">
             {% if not page.isFirst %}
-                <a class="button" href="{{ page.nextSibling.url }}"><i class="fa fa-chevron-left"></i> {{ 'BLOG.ITEM.NEXT_POST'|t }}</a>
+                <a class="btn btn-danger" href="{{ page.nextSibling.url }}"><span class="glyphicon glyphicon-chevron-right"></span> {{ 'Next Post'|t }}</a>
             {% endif %}
 
             {% if not page.isLast %}
-                <a class="button" href="{{ page.prevSibling.url }}">{{ 'BLOG.ITEM.PREV_POST'|t }} <i class="fa fa-chevron-right"></i></a>
+                <a class="btn btn-danger" href="{{ page.prevSibling.url }}">{{ 'Previous Post'|t }} <span class="glyphicon glyphicon-chevron-left"></span></a>
             {% endif %}
         </p>
     {% endif %}

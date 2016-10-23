@@ -16,8 +16,6 @@ Grav-Theme-Insanen Aka Insanen theme for GravCMS.
 * Sleek interaction and smooth scrolling
 * Usage Of Latest Technology: HTML5, CSS3, JavaScript, Bootstrap 3 framework.
 
-![alt tag](screenshot-blog.png)
-
 # Installation
 
 ## GPM Installation (Preferred)
