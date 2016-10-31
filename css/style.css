@@ -205,3 +205,9 @@ hr.hrmore {
       display: inline-block;
       padding-top: 5px;
 }
+.blogPageTitle {
+    font-family: 'Bungee', cursive;
+    font-size: 4rem;
+    border-bottom: 2px dashed #c0c0c0;
+    margin-bottom: 0rem;
+}

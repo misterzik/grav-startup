@@ -25,13 +25,6 @@
             </time>
         </div>
 
-        {% if page.taxonomy.tag %}
-        <span class="tags">
-            {% for tag in page.taxonomy.tag %}
-            <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
-            {% endfor %}
-        </span>
-        {% endif %}
         {% if header_image %}
             {% if header_image_file %}
                 {% set header_image_media = page.media.images[header_image_file] %}
@@ -44,6 +37,16 @@
     </div>
 
     <div class="list-blog">
+
+
+        {% if page.taxonomy.tag %}
+        <span class="tags right"><small>Tags:</small> 
+            {% for tag in page.taxonomy.tag %}
+             <a href="{{ blog.url|rtrim('/') }}/tag{{ config.system.param_sep }}{{ tag }}" class="p-category">{{ tag }}</a>
+            {% endfor %}
+        </span>
+        {% endif %}
+
 
     {% if page.header.continue_link is sameas(false) %}
         <div class="e-content">

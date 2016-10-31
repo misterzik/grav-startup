@@ -1,10 +1,9 @@
 # Grav-Theme-Insanen
-A Modern Flat CMS Theme using Twigs, HTML5, CSS3, JQuery and Bootstrap.
-- Insanen Team
+Grav, A Modern Source Flat File CMS theme by MisterZik & Insanen Team.
 
 
 ![alt tag](screenshot.png)
-Grav-Theme-Insanen for Grav Flat CMS.
+Grav-Theme-Insanen Aka Insanen theme for GravCMS.
 
 # Features
 
@@ -16,8 +15,6 @@ Grav-Theme-Insanen for Grav Flat CMS.
 * Infinitely and extensively customizable
 * Sleek interaction and smooth scrolling
 * Usage Of Latest Technology: HTML5, CSS3, JavaScript, Bootstrap 3 framework.
-
-![alt tag](screenshot-blog.png)
 
 # Installation
 
